@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .nav-bar{
+            width: 100vw;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            
+        }
+        .nav-bar a{
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .nav-bar{
+                flex-direction: column;
+                background-color: gray;
+                gap: 10px;
+                height: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar-container">
+        <nav class="nav-bar">
+        <a href="http://">Home</a>
+        <a href="http://">About</a>
+        <a href="http://">Services</a>
+        <a href="http://">Portfolio</a>
+        <a href="http://">Contact</a>
+        </nav>
+    </div>
+</body>
+</html>

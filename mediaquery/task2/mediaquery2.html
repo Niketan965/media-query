@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        gap: 10px;
+    }
+    @media (min-width: 500px) and (max-width: 800px){
+        .container{
+            grid-template-columns: 50% 50%;
+        }
+    }
+    @media (max-width: 500px){
+        .container{
+            grid-template-columns: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+       <div class="image image-1"><img src="./107-200x300.jpg" alt="" srcset=""></div>
+       <div class="image image-2"><img src="./107-200x300.jpg" alt="" srcset=""></div>
+       <div class="image image-3"><img src="./107-200x300.jpg" alt="" srcset=""></div>
+    </div>
+</body>
+</html>

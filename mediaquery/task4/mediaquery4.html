@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 250px);
+        gap: 20px;
+    }
+    .box{
+     text-align: center;
+     color: white;   
+    }
+    .box-1{
+        background-color: red;
+    }
+    .box-2{
+        background-color: green;
+    }
+    .box-3{
+        background-color: blue;
+
+    }
+    .box-4{
+        background-color: rgb(192, 89, 11);
+    }
+
+    @media (max-width: 1000px){
+        .box-container{
+            grid-template-columns: 100%;
+            
+        }
+    }
+</style>
+<body>
+    <div class="box-container">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+        <div class="box box-4">Box 4</div>
+    </div>
+</body>
+</html>
